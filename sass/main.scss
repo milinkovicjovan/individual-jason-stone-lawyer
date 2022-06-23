@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.jason-individual__hero {
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.jason-individual__hero-description {
+  background-color: #707070;
+  opacity: 48%;
+  max-width: 980px;
+  padding: 22px 200px 46px 46px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  p {
+    color: #ffffff;
+    // font-family: Montserrat;
+    font-size: 30px;
+    max-width: 670px;
+    line-height: 35px;
+    opacity: 100%;
+  }
+}
+
+.jason-individual__information {
+  background-color: #4e0003;
+  height: 204px;
+}
+
+.jason-individual__personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  p {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  p:first-child {
+    border-right: white 4px solid;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+  p:last-child {
+    font-weight: 500;
+    padding-left: 20px;
+  }
+}
+
+.jason-individual__personal-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jason-individual__massachusetts,
+.jason-individual__new-york {
+  width: 160px;
+  height: 120px;
+}
