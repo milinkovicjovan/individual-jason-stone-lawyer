@@ -34,7 +34,8 @@
 
 .jason-individual__information {
   background-color: #4e0003;
-  height: 204px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .jason-individual__personal-info {
@@ -47,7 +48,7 @@
     color: #ffffff;
   }
   p:first-child {
-    border-right: white 4px solid;
+    border-right: white 3px solid;
     font-weight: 700;
     padding-right: 20px;
   }
@@ -59,12 +60,196 @@
 
 .jason-individual__personal-contact {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-bottom: 35px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.jason-individual__personal-button {
+  width: 340px;
+  height: 50px;
+  border: none;
+  background-color: #e6e6e6;
+  color: #4e0003;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Montserrat;
+  margin-left: 20px;
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+// MAIN PART
+
+.jason-individual__lawyers-life {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+// .jason-individual__lawyer-bio {
+//   max-width: 1230px;
+//   padding: 5% 0 0 12.5%;
+// }
+
+.jason-individual__bio-heading {
+  font-size: 30px;
+  font-family: Montserrat;
+  color: #4e0003;
+  padding-top: 50px;
+}
+
+.jason-individual__memories-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jason-individual__bio-memories {
+  display: flex;
+  align-items: center;
+  margin-top: 160px;
+}
+
+.jason-individual__bio-swipe {
+  margin: 0 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.jason-individual__media-box {
+  padding-top: 35px;
+}
+
+.jason-individual__media-heading {
+  font-size: 35px;
+  color: #4e0003;
+  font-family: Montserrat;
+  padding-bottom: 40px;
+}
+
+.jason-individual__youtube-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.jason-individual__youtube-text {
+  margin-left: 40px;
+  margin-right: 65px;
+  max-width: 340px;
+  p {
+    font-size: 20px;
+    color: #707070;
+    font-family: Montserrat;
+  }
+  @media (max-width: 1440px) {
+    margin: 0 20px;
+  }
+}
+
+.jason-individual__button-more {
+  font-size: 20px;
+  font-family: Montserrat;
+  color: #4e0003;
+}
+
+.jason-individual__frame-box {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.jason-individual__logos-area {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
+  background-color: #e6e6e6;
+  @media (max-width: 1560px) {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+.jason-individual__logos-heading {
+  font-size: 27px;
+  color: #4e0003;
+  font-family: Montserrat;
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+
+.jason-individual__practice-state {
+  padding-left: 100px;
+}
+
+.jason-individual__practice-massachusetts {
+  padding-bottom: 70px;
+}
+
+.jason-individual__practice-paragraph {
+  color: #707070;
 }
 
 .jason-individual__massachusetts,
 .jason-individual__new-york {
   width: 160px;
   height: 120px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.jason-individual__flex-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jason-individual__rivers-image {
+  margin-bottom: 70px;
+}
+
+.jason-individual__emory-image {
+  margin-bottom: 60px;
+}
+
+.jason-individual__torch-image {
+}
+.jason-individual__national-image {
+  margin-bottom: 50px;
+}
+.jason-individual__champion-image {
+}
+
+.jason-individual__cases-box {
+  text-align: center;
+  padding-bottom: 35px;
+  max-width: 362px;
+  @media (max-width: 576px) {
+    max-width: 280px;
+  }
+}
+
+.jason-individual__cases-cash {
+  font-size: 50px;
+  font-family: Montserrat;
+  color: #4e0003;
+  border-bottom: 2px solid #707070;
+}
+.jason-individual__cases-paragraph {
+  font-size: 25px;
+  font-family: Montserrat;
+  color: #707070;
 }
