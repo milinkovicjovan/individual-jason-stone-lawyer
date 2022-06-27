@@ -206,8 +206,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-  }
-  @media (max-width: 768px) {
     padding: 50px 0 0 0;
   }
 }
@@ -268,6 +266,17 @@
   }
 }
 
+.jason-stone__glide {
+  display: flex;
+  align-items: center;
+  max-width: 1020px;
+  margin-top: 160px;
+  @media (max-width: 1500px) {
+    max-width: 700px;
+    margin-top: 60px;
+  }
+}
+
 .jason-individual__bio-memories {
   display: flex;
   flex-direction: row;
@@ -300,7 +309,7 @@
   margin: 0 12px;
   width: 48px;
   height: 48px;
-  @media (max-width: 1460px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 }
@@ -387,6 +396,7 @@
   @media (max-width: 1700px) {
     margin: 0;
     width: 100%;
+    margin-top: 40px;
   }
 }
 
