@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/main.min.css" rel="stylesheet" />
+    <link href="/css/glide.core.min.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -117,6 +118,47 @@
                 October 2020, they added a dog to the family, named Taffy Apple.
               </p>
             </div>
+            <!-- <div class="container">
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img
+                        class="jason-individual__memories-img"
+                        src="/img/placeholder.jpg"
+                        alt="Jason Memories"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        class="jason-individual__memories-img"
+                        src="/img/placeholder.jpg"
+                        alt="Jason Memories"
+                      />
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        class="jason-individual__memories-img"
+                        src="/img/placeholder.jpg"
+                        alt="Jason Memories"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button
+                    class="glide__arrow glide__arrow--right glide-button"
+                    data-glide-dir=">"
+                  >
+                    <img
+                      class="jason-individual__bio-swipe"
+                      src="/img/swipe-more.svg"
+                      alt="Svg swipe more"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div> -->
             <div class="jason-individual__bio-memories">
               <img
                 class="jason-individual__memories-img"
@@ -132,11 +174,6 @@
                 class="jason-individual__memories-img"
                 src="/img/placeholder.jpg"
                 alt="Jason Memories"
-              />
-              <img
-                class="jason-individual__bio-swipe"
-                src="/img/swipe-more.svg"
-                alt="Svg swipe more"
               />
             </div>
             <div class="jason-individual__media-box">
@@ -517,5 +554,9 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount();
+    </script>
   </body>
 </html>

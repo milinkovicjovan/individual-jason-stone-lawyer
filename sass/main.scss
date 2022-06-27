@@ -157,11 +157,17 @@
   font-size: 20px;
   font-weight: 700;
   font-family: Montserrat;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   @media (max-width: 1024px) {
     margin-left: 0;
     margin-bottom: 20px;
   }
+}
+
+.glide-button {
+  border: none;
+  background-color: #ffffff;
 }
 
 // MAIN PART
@@ -178,15 +184,16 @@
 
 .jason-individual__lawyer-bio {
   max-width: 1230px;
-  padding: 80px 0 0 200px;
+  margin: 80px 0 0 200px;
+  overflow: hidden;
   @media (max-width: 1700px) {
-    padding: 70px 0 0 100px;
+    margin: 70px 0 0 100px;
   }
   @media (max-width: 1600px) {
-    padding: 70px 0 0 20px;
+    margin: 70px 0 0 20px;
   }
   @media (max-width: 1200px) {
-    padding: 50px 0 0 20px;
+    margin: 50px 0 0 20px;
   }
   @media (max-width: 768px) {
     display: none;
@@ -216,6 +223,7 @@
 
 .jason-individual__text-mobile {
   padding: 0 43px;
+  padding-bottom: 120px;
 }
 
 .jason-individual__bio-heading {
@@ -226,6 +234,36 @@
   @media (max-width: 768px) {
     font-size: 20px;
     padding-top: 68px;
+    position: relative;
+    padding-bottom: 35px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 110%;
+      left: -50px;
+      top: 100px;
+      height: 4px;
+      background: linear-gradient(
+        135deg,
+        #84b403 0,
+        rgba(250, 248, 248, 01) 100%
+      );
+    }
+  }
+  @media (max-width: 611px) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 110%;
+      left: -50px;
+      top: 122px;
+      height: 4px;
+      background: linear-gradient(
+        135deg,
+        #84b403 0,
+        rgba(250, 248, 248, 01) 100%
+      );
+    }
   }
 }
 
@@ -235,13 +273,18 @@
   // flex-wrap: wrap;
   align-items: center;
   margin-top: 160px;
+  margin-right: 20px;
   // max-width: 917px;
   @media (max-width: 1460px) {
     flex-direction: column;
     margin-top: 60px;
+    margin-right: 0;
   }
   @media (max-width: 992px) {
     margin-top: 60px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 0;
   }
 }
 
@@ -284,7 +327,7 @@
   &::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 60%;
     left: -200px;
     top: 40px;
     height: 4px;
@@ -293,6 +336,25 @@
       #84b403 0,
       rgba(250, 248, 248, 01) 100%
     );
+    @media (max-width: 1460px) {
+      width: 100%;
+    }
+    @media (max-width: 1100px) {
+      width: 120%;
+    }
+    @media (max-width: 1000px) {
+      width: 140%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      background: linear-gradient(
+        135deg,
+        rgba(250, 248, 248, 01) 0,
+        #84b403 100%
+      );
+      left: 0;
+      right: 0;
+    }
   }
 }
 
@@ -314,6 +376,7 @@
 .jason-individual__youtube-text {
   margin-left: 40px;
   width: 50%;
+  margin-right: 20px;
   // max-width: 340px;
   p {
     font-size: 20px;
@@ -371,6 +434,7 @@
   align-items: flex-start;
   padding-left: 70px;
   background-color: #e6e6e6;
+  overflow: hidden;
   @media (max-width: 1560px) {
     align-items: center;
     padding-left: 0;
@@ -388,6 +452,7 @@
     flex-direction: column;
     background-color: #e6e6e6;
     align-items: center;
+    overflow: hidden;
   }
 }
 
@@ -397,11 +462,30 @@
   font-family: Montserrat;
   padding-top: 80px;
   margin-bottom: 60px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 115px;
+    height: 4px;
+    background: linear-gradient(239deg, #84b403 0, #e6e6e6 100%);
+  }
   @media (max-width: 768px) {
     font-size: 20px;
     margin-bottom: 27px;
     padding-top: 70px;
     text-align: center;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      left: 0;
+      top: 96px;
+      height: 4px;
+      background: linear-gradient(239deg, #84b403 0, #e6e6e6 100%);
+    }
   }
 }
 
