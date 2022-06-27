@@ -195,19 +195,20 @@
   @media (max-width: 1200px) {
     margin: 50px 0 0 20px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 }
 
 .jason-individual__lawyer-mobile {
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     display: flex;
     flex-direction: column;
-    max-width: 1230px;
-    padding: 50px 0 0 0;
     margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    padding: 50px 0 0 0;
   }
 }
 
@@ -216,7 +217,7 @@
   @media (max-width: 1200px) {
     padding-right: 30px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     padding-right: 0;
   }
 }
@@ -283,7 +284,7 @@
   @media (max-width: 992px) {
     margin-top: 60px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     margin-top: 0;
   }
 }
@@ -309,7 +310,7 @@
   @media (max-width: 1700px) {
     padding-right: 20px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     padding-right: 0;
   }
 }
@@ -320,7 +321,7 @@
   font-family: Montserrat;
   position: relative;
   padding-bottom: 40px;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     font-size: 20px;
     text-align: center;
   }
@@ -345,7 +346,7 @@
     @media (max-width: 1000px) {
       width: 140%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1300px) {
       width: 100%;
       background: linear-gradient(
         135deg,
@@ -368,7 +369,7 @@
     flex-direction: column;
     margin-bottom: 60px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     margin-bottom: 28px;
   }
 }
@@ -404,10 +405,12 @@
   @media (max-width: 1700px) {
     max-width: 100%;
   }
-  @media (max-width: 768px) {
-    height: 210px;
+  @media (max-width: 1300px) {
     margin: 0 auto;
     max-width: 550px;
+  }
+  @media (max-width: 768px) {
+    height: 210px;
   }
   iframe {
     position: absolute;
@@ -439,19 +442,18 @@
     align-items: center;
     padding-left: 0;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 }
 
 .jason-individual__logos-mobile {
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #e6e6e6;
-    align-items: center;
     overflow: hidden;
   }
 }
@@ -472,7 +474,7 @@
     height: 4px;
     background: linear-gradient(239deg, #84b403 0, #e6e6e6 100%);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     font-size: 20px;
     margin-bottom: 27px;
     padding-top: 70px;
@@ -491,11 +493,17 @@
 
 .jason-individual__practice-state {
   padding-left: 100px;
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
 }
 
 .jason-individual__practice-massachusetts {
   padding-bottom: 70px;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     padding-bottom: 43px;
   }
 }
@@ -511,7 +519,7 @@
   object-fit: cover;
   display: flex;
   justify-content: center;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 130px;
     height: 90px;
   }
@@ -526,7 +534,7 @@
 
 .jason-individual__rivers-image {
   margin-bottom: 70px;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 214px;
     height: 45px;
   }
@@ -534,30 +542,36 @@
 
 .jason-individual__emory-image {
   margin-bottom: 60px;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 260px;
     height: 102px;
   }
 }
 
 .jason-individual__torch-image {
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 158px;
     height: 158px;
   }
 }
 .jason-individual__national-image {
   margin-bottom: 50px;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 202px;
     height: 115px;
   }
 }
 .jason-individual__champion-image {
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     width: 179px;
     height: 38px;
   }
+}
+
+.jason-individual__cases-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .jason-individual__cases-box {
@@ -574,7 +588,7 @@
   font-family: Montserrat;
   color: #4e0003;
   border-bottom: 2px solid #707070;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     font-size: 40px;
   }
 }
@@ -582,7 +596,7 @@
   font-size: 25px;
   font-family: Montserrat;
   color: #707070;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     font-size: 20px;
   }
 }
