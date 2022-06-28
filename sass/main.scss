@@ -95,6 +95,7 @@
   padding-right: 15px;
   border-right: white 3px solid;
   font-weight: 700;
+  font-family: Montserrat;
   @media (max-width: 1024px) {
     border-right: none;
     font-size: 25px;
@@ -107,6 +108,7 @@
     display: inline;
     color: #ffffff;
     font-size: 25px;
+    font-family: Montserrat;
     line-height: 24px;
     margin-bottom: 0;
     font-weight: 700;
@@ -117,6 +119,7 @@
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
+  font-family: Montserrat;
   padding-left: 20px;
   @media (max-width: 1024px) {
     font-size: 20px;
@@ -210,7 +213,9 @@
 .single-attorney__text-area {
   padding-right: 60px;
   font-size: 20px;
+  font-family: Montserrat;
   color: #707070;
+
   @media (max-width: 1200px) {
     padding-right: 30px;
   }
