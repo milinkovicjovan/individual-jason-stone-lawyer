@@ -3,7 +3,7 @@
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-.jason-individual__hero {
+.single-attorney__hero {
   margin: 0 auto;
   max-width: 1920px;
   position: relative;
@@ -17,7 +17,7 @@
   }
 }
 
-.jason-individual__hero-description {
+.single-attorney__hero-description {
   max-width: 980px;
   padding: 1% 10% 2% 3%;
   position: absolute;
@@ -46,7 +46,7 @@
   }
 }
 
-.jason-individual__information {
+.single-attorney__information {
   background-color: #4e0003;
   max-width: 1920px;
   margin: 0 auto;
@@ -55,7 +55,7 @@
   }
 }
 
-.jason-individual__personal-info {
+.single-attorney__personal-info {
   @media (max-width: 1024px) {
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@
   }
 }
 
-.jason-individual__information-picture {
+.single-attorney__information-picture {
   display: none;
   @media (max-width: 1024px) {
     display: block;
@@ -74,7 +74,7 @@
   }
 }
 
-.jason-individual-text-box {
+.single-attorney__text-box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,7 +88,7 @@
   }
 }
 
-.jason-individual-text-desktop {
+.single-attorney__text-desktop {
   display: inline;
   font-size: 50px;
   color: #ffffff;
@@ -101,7 +101,7 @@
     display: none;
   }
 }
-.jason-individual-text-mobile {
+.single-attorney__text-mobile {
   display: none;
   @media (max-width: 1024px) {
     display: inline;
@@ -113,7 +113,7 @@
   }
 }
 
-.jason-individual-position-text {
+.single-attorney__position-text {
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
@@ -127,14 +127,7 @@
   }
 }
 
-.jason-individual__visible-desktop {
-  display: inline;
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-.jason-individual__personal-contact {
+.single-attorney__personal-contact {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,7 +141,7 @@
   }
 }
 
-.jason-individual__personal-button {
+.single-attorney__personal-button {
   width: 340px;
   height: 50px;
   border: none;
@@ -165,6 +158,13 @@
   }
 }
 
+.single-attorney__visible-desktop {
+  display: inline;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .glide-button {
   border: none;
   background-color: #ffffff;
@@ -172,7 +172,7 @@
 
 // MAIN PART
 
-.jason-individual__lawyers-life {
+.single-attorney__lawyers-life {
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
@@ -182,7 +182,7 @@
   }
 }
 
-.jason-individual__lawyer-bio {
+.single-attorney__lawyer-bio {
   max-width: 1230px;
   margin: 80px 0 0 200px;
   overflow: hidden;
@@ -200,7 +200,7 @@
   }
 }
 
-.jason-individual__lawyer-mobile {
+.single-attorney__lawyer-mobile {
   display: none;
   @media (max-width: 1300px) {
     display: flex;
@@ -210,8 +210,10 @@
   }
 }
 
-.jason-individual__text-area {
+.single-attorney__text-area {
   padding-right: 60px;
+  font-size: 20px;
+  color: #707070;
   @media (max-width: 1200px) {
     padding-right: 30px;
   }
@@ -220,12 +222,14 @@
   }
 }
 
-.jason-individual__text-mobile {
+.single-attorney__bio-mobile {
+  font-size: 16px;
+  color: #707070;
   padding: 0 43px;
   padding-bottom: 120px;
 }
 
-.jason-individual__bio-heading {
+.single-attorney__bio-heading {
   font-size: 30px;
   font-family: Montserrat;
   color: #4e0003;
@@ -266,23 +270,23 @@
   }
 }
 
-.jason-stone__glide {
+.single-attorney__glide {
   display: flex;
   align-items: center;
-  max-width: 1020px;
-  margin-top: 160px;
+  max-width: 1005px;
+  margin-top: 150px;
   @media (max-width: 1500px) {
     max-width: 700px;
     margin-top: 60px;
   }
 }
 
-.jason-individual__bio-memories {
+.single-attorney__bio-memories {
   display: flex;
   flex-direction: row;
   // flex-wrap: wrap;
   align-items: center;
-  margin-top: 160px;
+  margin-top: 150px;
   margin-right: 20px;
   // max-width: 917px;
   @media (max-width: 1460px) {
@@ -298,14 +302,14 @@
   }
 }
 
-.jason-individual__memories-img {
+.single-attorney__memories-img {
   // width: 100%;
   // height: 100%;
   object-fit: cover;
   max-width: 304px;
 }
 
-.jason-individual__bio-swipe {
+.single-attorney__bio-swipe {
   margin: 0 12px;
   width: 48px;
   height: 48px;
@@ -314,7 +318,7 @@
   }
 }
 
-.jason-individual__media-box {
+.single-attorney__media-box {
   padding-top: 35px;
   @media (max-width: 1700px) {
     padding-right: 20px;
@@ -324,7 +328,7 @@
   }
 }
 
-.jason-individual__media-heading {
+.single-attorney__media-heading {
   font-size: 35px;
   color: #4e0003;
   font-family: Montserrat;
@@ -368,11 +372,11 @@
   }
 }
 
-.jason-individual__youtube-box {
+.single-attorney__youtube-box {
   display: flex;
   flex-direction: row;
   // flex-wrap: wrap;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   width: 100%;
   @media (max-width: 1700px) {
     flex-direction: column;
@@ -383,7 +387,7 @@
   }
 }
 
-.jason-individual__youtube-text {
+.single-attorney__youtube-text {
   margin-left: 40px;
   width: 50%;
   margin-right: 20px;
@@ -400,13 +404,13 @@
   }
 }
 
-.jason-individual__button-more {
+.single-attorney__button-more {
   font-size: 20px;
   font-family: Montserrat;
   color: #4e0003;
 }
 
-.jason-individual__frame-box {
+.single-attorney__frame-box {
   position: relative;
   width: 100%;
   max-width: 550px;
@@ -439,7 +443,7 @@
   height: 100%;
 }
 
-.jason-individual__logos-area {
+.single-attorney__logos-area {
   max-width: 700px;
   width: 100%;
   display: flex;
@@ -457,7 +461,7 @@
   }
 }
 
-.jason-individual__logos-mobile {
+.single-attorney__logos-mobile {
   display: none;
   @media (max-width: 1300px) {
     width: 100%;
@@ -468,7 +472,7 @@
   }
 }
 
-.jason-individual__logos-heading {
+.single-attorney__logos-heading {
   font-size: 27px;
   color: #4e0003;
   font-family: Montserrat;
@@ -501,7 +505,7 @@
   }
 }
 
-.jason-individual__practice-state {
+.single-attorney__practice-state {
   padding-left: 100px;
   @media (max-width: 1300px) {
     display: flex;
@@ -511,19 +515,19 @@
   }
 }
 
-.jason-individual__practice-massachusetts {
+.single-attorney__practice-massachusetts {
   padding-bottom: 70px;
   @media (max-width: 1300px) {
     padding-bottom: 43px;
   }
 }
 
-.jason-individual__practice-paragraph {
+.single-attorney__practice-paragraph {
   color: #707070;
 }
 
-.jason-individual__massachusetts,
-.jason-individual__new-york {
+.single-attorney__massachusetts,
+.single-attorney__new-york {
   width: 160px;
   height: 120px;
   object-fit: cover;
@@ -535,14 +539,14 @@
   }
 }
 
-.jason-individual__flex-logos {
+.single-attorney__flex-logos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.jason-individual__rivers-image {
+.single-attorney__rivers-image {
   margin-bottom: 70px;
   @media (max-width: 1300px) {
     width: 214px;
@@ -550,7 +554,7 @@
   }
 }
 
-.jason-individual__emory-image {
+.single-attorney__emory-image {
   margin-bottom: 60px;
   @media (max-width: 1300px) {
     width: 260px;
@@ -558,33 +562,34 @@
   }
 }
 
-.jason-individual__torch-image {
+.single-attorney__torch-image {
   @media (max-width: 1300px) {
     width: 158px;
     height: 158px;
   }
 }
-.jason-individual__national-image {
-  margin-bottom: 50px;
+.single-attorney__national-image {
+  margin-bottom: 100px;
   @media (max-width: 1300px) {
     width: 202px;
     height: 115px;
+    margin-bottom: 50px;
   }
 }
-.jason-individual__champion-image {
+.single-attorney__champion-image {
   @media (max-width: 1300px) {
     width: 179px;
     height: 38px;
   }
 }
 
-.jason-individual__cases-wrapper {
+.single-attorney__cases-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.jason-individual__cases-box {
+.single-attorney__cases-box {
   text-align: center;
   padding-bottom: 35px;
   max-width: 362px;
@@ -593,7 +598,7 @@
   }
 }
 
-.jason-individual__cases-cash {
+.single-attorney__cases-cash {
   font-size: 50px;
   font-family: Montserrat;
   color: #4e0003;
@@ -602,10 +607,11 @@
     font-size: 40px;
   }
 }
-.jason-individual__cases-paragraph {
+.single-attorney__cases-paragraph {
   font-size: 25px;
   font-family: Montserrat;
   color: #707070;
+  font-weight: 700;
   @media (max-width: 1300px) {
     font-size: 20px;
   }
